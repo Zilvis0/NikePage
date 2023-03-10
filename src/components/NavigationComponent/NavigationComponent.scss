@@ -1,0 +1,28 @@
+.banner {
+  background-color: crimson;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    color: #000;
+    display: flex;
+  }
+  &-items {
+    display: flex;
+    gap: 1rem;
+    &__bag {
+      cursor: pointer;
+      color: plum;
+    }
+    &__search {
+      cursor: pointer;
+      color: green;
+    }
+    &__burger-menu {
+      cursor: pointer;
+      color: palegreen;
+    }
+  }
+}
