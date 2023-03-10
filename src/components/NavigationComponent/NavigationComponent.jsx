@@ -1,6 +1,9 @@
 import React from "react";
 import "./NavigationComponent.scss";
-import Logo from "../../assets/Logo.jsx";
+import Logo from "../../assets/Logo";
+import Bag from "../../assets/Bag";
+import SearchIcon from "../../assets/SearchIcon";
+import BurgerMenu from "../../assets/BurgerMenu";
 
 export default function NavigationComponent() {
   return (
@@ -9,9 +12,15 @@ export default function NavigationComponent() {
         <Logo />
       </div>
       <div className="banner-items">
-        <div className="banner-items__bag">bag</div>
-        <img className="banner-items__search" alt="temp"></img>
-        <button className="banner-items__burger-menu">burger</button>
+        <div className="banner-items__bag">
+          <Bag />
+        </div>
+        <div className="banner-items__search">
+          <SearchIcon />
+        </div>
+        <button className="banner-items__burger-menu">
+          <BurgerMenu />
+        </button>
       </div>
     </div>
   );

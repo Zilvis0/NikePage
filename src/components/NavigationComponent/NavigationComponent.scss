@@ -1,6 +1,6 @@
 .banner {
-  background-color: crimson;
-  padding: 0 1rem;
+  background-color: #fff;
+  padding: 1rem 1rem 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,21 +8,40 @@
   &__logo {
     color: #000;
     display: flex;
+    transform: scale(2.5);
+    cursor: pointer;
   }
   &-items {
     display: flex;
     gap: 1rem;
     &__bag {
       cursor: pointer;
-      color: plum;
+      color: #000;
+      padding: 0.5rem;
+      &:hover {
+        background-color: #e5e5e5;
+        border-radius: 50%;
+      }
     }
     &__search {
       cursor: pointer;
-      color: green;
+      color: #000;
+      padding: 0.5rem;
+      &:hover {
+        background-color: #e5e5e5;
+        border-radius: 50%;
+      }
     }
     &__burger-menu {
       cursor: pointer;
-      color: palegreen;
+      color: #000;
+      border: none;
+      background-color: #fff;
+      padding: 0.5rem;
+      &:hover {
+        background-color: #e5e5e5;
+        border-radius: 50%;
+      }
     }
   }
 }
